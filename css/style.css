@@ -205,23 +205,40 @@ img {
   margin-left: auto;
 }
 
-.nav-contact .item {
+.nav-contact__email {
   display: flex;
   align-items: center;
 }
 
-.nav-contact .item:not(:last-child) {
-  margin-right: 30px;
+.nav-contact__email::before {
+  content: "";
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+  background-image: url("../img/contact-email.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
 }
 
-.icon-contact {
-  display: block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  border-radius: 50%;
+.nav-contact__tel {
+  display: flex;
+  align-items: center;
+}
 
-  background-color: var(--font-primary-color);
+.nav-contact__tel::before {
+  content: "";
+  margin-right: 10px;
+  width: 15px;
+  height: 15px;
+  background-image: url("../img/contact-smartphone.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right center;
+}
+
+.nav-contact__email {
+  margin-right: 30px;
 }
 
 .header .contact {
