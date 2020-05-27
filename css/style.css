@@ -319,10 +319,6 @@ img {
   background-color: var(--bgc-secondary);
 }
 
-.icon-feature:hover {
-  background-color: var(--font-active-element);
-}
-
 .feature-title {
   margin-bottom: 10px;
 
@@ -577,10 +573,6 @@ img {
   border-top-right-radius: 5px;
   overflow: hidden;
 }
-
-/* .portfolio .item:hover,
-.portfolio .item:focus {
-} */
 
 .card-content {
   padding: 20px 24px;
