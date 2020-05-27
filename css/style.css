@@ -243,14 +243,21 @@ img {
 /* Hero css options*/
 .hero {
   display: flex;
-  /* for example */
+  max-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 200px;
-  /* for example */
   padding-bottom: 200px;
   justify-content: center;
   align-items: center;
 
-  /* for example bgc */
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.8),
+      rgba(47, 48, 58, 0.8)
+    ),
+    url("../img/header-img.jpg");
+
   background-color: var(--bgc-footer);
 }
 
@@ -270,21 +277,12 @@ img {
   color: var(--hero-font-color);
   text-align: center;
   text-transform: uppercase;
-
-  /* for example bgc */
-  background-color: var(--bgc-footer);
 }
 
 /* Sections css options*/
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.section__conteiner {
-}
-
-.section__conteiner--hero {
 }
 
 .section.no-padding {
