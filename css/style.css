@@ -113,6 +113,8 @@ img {
 .button {
   padding: 6px 22px;
 
+  border-style: none;
+  border-radius: 4px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -127,6 +129,8 @@ img {
 .button:hover,
 .button:focus {
   color: var(--font-third-color);
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 3px 1px rgba(0, 0, 0, 0.1);
 
   background-color: var(--font-active-element);
 }
@@ -302,10 +306,6 @@ img {
   padding-bottom: 94px;
 }
 
-.section.no-padding {
-  padding-bottom: 0px;
-}
-
 .section .title {
   margin-bottom: 50px;
 
@@ -348,11 +348,6 @@ img {
 
 .feature .item {
   width: 270px;
-}
-
-.conteiner.separastor {
-  padding-bottom: 94px;
-  border-bottom: 1px solid #ececec;
 }
 
 /* Product css options */
@@ -591,10 +586,18 @@ img {
   overflow: hidden;
 }
 
+.portfolio .item:hover,
+.portfolio .item:focus {
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .card-content {
   padding: 20px 24px;
 
-  border: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
