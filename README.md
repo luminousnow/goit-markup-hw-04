@@ -1,12 +1,23 @@
 # goit-markup-hw-04
 
-25/05/2020
-ok оптимізувати зображення растр і вестор
-ok delete hover from Feature cards
+Іконки в хедері через СВГ
+Іконки в Future через :befor
+Іконки в Team через СВГ
+Іконки в Clients через СВГ
+Іконки в Footer через bgc i bgi
 
-todo зміна колльору іконок при наведенні
-todo забрати підсвітку з Features (Стилізувати загальне через:: біфо ЦСС, точково:: біфо)
-todo зробити іконки через БГК, не інтерактивні
-todo background-origin and background-clip
+- fill curentCollor і видалити непотрібний філл
+- створити спрайт, оптимізувати, видалити лишнє руками
+- розміри іконок прописати в ХТМЛ
+- іконки в свг інлайн
+- в контактах в силку вписати свг і контакт
 
-todo переробити структуру класів по БЕМ
+corection
+
+ok - delete separator border between Features sections and Product sections
+ok - delete border-top from descriptions of Portfolio cards
+ok - shadow box on Portfolio cards if :hover or :focus is active
+ok - style shadow, border for filter button
+
+- change bgc and fill on social icon of Team cards, if :hover or :focus is active
+- змінити хедер і футер на сторінці портфоліо
