@@ -576,7 +576,7 @@ img {
 
 .filter {
   display: flex;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   justify-content: center;
 }
 
@@ -608,7 +608,7 @@ img {
 }
 
 .card-content {
-  padding: 20px 24px;
+  padding: 20px 0px;
 
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
@@ -621,6 +621,7 @@ img {
 
 .card-title {
   margin-bottom: 4px;
+  padding: 0px 24px;
 
   font-weight: 700;
   font-size: 18px;
@@ -630,6 +631,8 @@ img {
 }
 
 .card-kinde {
+  padding: 0px 24px;
+
   font-size: 16px;
   line-height: 1.87;
   color: var(--font-primary-color);
