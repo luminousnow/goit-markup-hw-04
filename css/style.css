@@ -234,6 +234,7 @@ img {
 .svg-email,
 .svg-tel {
   margin-right: 10px;
+  fill: currentColor;
 }
 
 .nav-contact__email > .contact:hover,
@@ -306,38 +307,24 @@ img {
   display: flex;
 }
 
+.feature .item {
+  width: 270px;
+}
+
 .feature > .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.feature > .item::before {
-  content: "";
+.feature__icon {
   display: block;
   width: 270px;
   height: 120px;
   margin-bottom: 30px;
+  padding: 25px 0;
 
   border-radius: 4px;
 
   background-color: var(--bgc-secondary);
-  background-repeat: no-repeat;
-  background-size: 70px;
-  background-position: center;
-}
-.sat::before {
-  background-image: url("../img/feature-sat.svg");
-}
-
-.clock::before {
-  background-image: url("../img/feature-clock.svg");
-}
-
-.diagram::before {
-  background-image: url("../img/feature-diagram.svg");
-}
-
-.astronaut::before {
-  background-image: url("../img/feature-astronaut.svg");
 }
 
 .feature-title {
@@ -350,19 +337,17 @@ img {
   text-transform: uppercase;
 }
 
-.feature .item {
-  width: 270px;
-}
-
 /* Product css options */
 .products {
   display: flex;
 }
 
+/* 
 .products > .item {
   border-radius: 4px;
-  overflow: hidden;
+  overflow: hidden; 
 }
+*/
 
 .products > .item:not(:last-child) {
   margin-right: 30px;
@@ -390,8 +375,10 @@ img {
 }
 
 .team > .team-member {
+  /* 
   border-radius: 4px;
-  overflow: hidden;
+  overflow: hidden; 
+  */
   box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 1px 3px rgba(0, 0, 0, 0.12);
 }
@@ -441,11 +428,17 @@ img {
   height: 44px;
   border-radius: 50%;
 
-  background-color: var(--font-primary-color);
+  color: var(--font-primary-color);
+  fill: currentColor;
+
+  background-color: var(--bgc-secondary);
 }
 
 .icon-team-social:hover,
 .icon-team-social:focus {
+  color: var(--font-third-color);
+  fill: currentColor;
+
   background-color: var(--font-active-element);
 }
 
@@ -457,22 +450,26 @@ img {
 .clients .item:not(:last-child) {
   margin-right: 30px;
 }
-.icon-client {
-  display: block;
+
+.clients-icon-box {
+  display: flex;
   width: 170px;
   height: 90px;
+  justify-content: center;
+  align-items: center;
 
-  border: 3px solid var(--font-primary-color);
-  border-radius: 5px;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  color: var(--font-primary-color);
+  fill: currentColor;
 
   background-color: var(--bgc-primary);
 }
 
-.icon-client:hover,
-.icon-client:focus {
-  border: 3px solid var(--font-active-element);
-
-  background-color: var(--bgc-primary);
+.clients-icon-box:hover,
+.clients-icon-box:focus {
+  border: 1px solid var(--font-active-element);
+  color: var(--font-active-element);
 }
 
 /* Footer general css options */
@@ -541,30 +538,20 @@ img {
   align-items: center;
 
   border-radius: 50%;
+  color: var(--font-primary-color);
+
   background-color: var(--font-primary-color);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-}
-
-.icon-social.instagram {
-  background-image: url("../img/social-instagram.svg");
-}
-
-.icon-social.twitter {
-  background-image: url("../img/social-twitter.svg");
-}
-
-.icon-social.facebook {
-  background-image: url("../img/social-facebook.svg");
-}
-
-.icon-social.linkedin {
-  background-image: url("../img/social-linkedin.svg");
 }
 
 .icon-social:hover {
   background-color: var(--font-active-element);
+}
+
+.icon-social > .instagram,
+.icon-social > .twitter,
+.icon-social > .facebook,
+.icon-social > .linkedin {
+  fill: var(--font-third-color);
 }
 
 .join-title {
@@ -607,9 +594,11 @@ img {
   width: 370px;
   margin: 15px;
 
+  /* 
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  overflow: hidden;
+  overflow: hidden; 
+  */
 }
 
 .portfolio .item:hover,
@@ -624,8 +613,10 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+  /* 
   border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-bottom-right-radius: 5px; 
+  */
 }
 
 .card-title {
