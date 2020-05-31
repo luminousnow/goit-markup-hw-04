@@ -390,6 +390,8 @@ img {
 .team-description {
   padding-top: 30px;
   padding-bottom: 24px;
+
+  background-color: var(--bgc-primary);
 }
 
 .team-title {
@@ -431,7 +433,7 @@ img {
   color: var(--font-primary-color);
   fill: currentColor;
 
-  background-color: var(--bgc-secondary);
+  background-color: var(--bgc-primary));
 }
 
 .icon-team-social:hover,
