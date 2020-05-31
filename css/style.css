@@ -433,7 +433,7 @@ img {
   color: var(--font-primary-color);
   fill: currentColor;
 
-  background-color: var(--bgc-primary));
+  background-color: var(--bgc-primary);
 }
 
 .icon-team-social:hover,
@@ -464,8 +464,6 @@ img {
   border-radius: 4px;
   color: var(--font-primary-color);
   fill: currentColor;
-
-  background-color: var(--bgc-primary);
 }
 
 .clients-icon-box:hover,
